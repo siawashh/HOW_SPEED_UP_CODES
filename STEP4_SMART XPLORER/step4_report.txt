@@ -1,0 +1,49 @@
+  /////////////////////////////////////////////////// step 4 ////////////////////////////////////////////////////////
+  smart xplorer		results 
+===========================SYNTHESIS REPORT ==============================================
+Timing Report
+
+   Minimum period: 4.311ns (Maximum Frequency: 231.965MHz)
+   Minimum input arrival time before clock: 3.803ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+   ============================ MAP REPORT=======================================
+Design Summary									same as step3
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    17 out of  11,440    1%
+    Number used as Flip Flops:                  17
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                         31 out of   5,720    1%
+    Number used as logic:                       31 out of   5,720    1%
+      Number using O6 output only:              29
+      Number using O5 output only:               0
+      Number using O5 and O6:                    2
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   1,440    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    17 out of   1,430    1%				******
+  Number of MUXCYs used:                         0 out of   2,860    0%
+  Number of LUT Flip Flop pairs used:           40
+    Number with an unused Flip Flop:            23 out of      40   57%
+    Number with an unused LUT:                   9 out of      40   22%
+    Number of fully used LUT-FF pairs:           8 out of      40   20%
+    Number of unique control sets:               5
+    Number of slice register sites lost
+      to control set restrictions:              23 out of  11,440    1%
+
+   
+   ================================= STATIC TIMING REPORT ========================================
+												0.003 ns faster than step3 and that's it ,best result(from 4.354 ns to 3.017 ns)
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.017|         |         |         |
+---------------+---------+---------+---------+---------+

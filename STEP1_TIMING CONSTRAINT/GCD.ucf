@@ -1,0 +1,31 @@
+
+# PlanAhead Generated physical constraints 
+# my board has 24MHz on-board clock
+
+# dip-switches
+NET "x[0]"    LOC = P51;
+NET "x[1]"    LOC = P48;
+NET "x[2]"    LOC = P55;
+NET "x[3]"    LOC = P56;
+
+NET "y[0]"    LOC = P57;
+NET "y[1]"    LOC = P58;
+NET "y[2]"    LOC = P66;
+NET "y[3]"    LOC = P59;
+
+# Push-Buttons
+NET "En"     		LOC = P78;
+
+#LED
+NET "done" 			LOC = P120; #LED7
+NET "output[3]"  	LOC = P126;
+NET "output[2]"  	LOC = P127;
+NET "output[1]"  	LOC = P131;
+NET "output[0]"  	LOC = P132;
+
+#clk
+INST "clk_BUFGP" LOC = P50;
+NET "clk" LOC = P50; # 24MHz on-board clock
+#Created by Constraints Editor (xc6slx9-tqg144-2) - 2022/10/19
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 3 ns HIGH 50%;
